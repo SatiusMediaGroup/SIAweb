@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html>
+ <head>
+ 	<meta charset="UTF-8">
+    <link rel="shortcut icon" type="image/x-icon" href="src/img/favicon.ico">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <title>SIA | Nosotros</title>
+ </head>
+ <body>
+    <header>
+        <div class="contenedornavbar" id="barraNav">
+            <a href=""><img class="marca" src="src/img/sialogo.png"></a>
+            <nav>
+                <a href="index.html" class="activa dropbtn">Inicio</a>
+                <a class="dropbtn">Nosotros</a>
+                <div class="desplegable">
+                    <button class="dropbtn">Productos</button>
+                    <div class="contenido">
+                        <a href="">Producto1</a>
+                        <a href="">Producto2</a>
+                        <a href="">Producto3</a>
+                    </div>
+                </div>
+                <div class="desplegable">
+                    <button class="dropbtn">Servicios</button>
+                    <div class="contenido">
+                        <a href="">Servicio1</a>
+                        <a href="">Servicio2</a>
+                        <a href="">Servicio3</a>
+                    </div>
+                </div>
+            </nav>
+        </div>
+    </header>
+    <div class="contenedorslider">
+        <div class="mySlider fade">
+            <img class="imgslider" src="src/img/tower.jpg">
+        </div>
+    </div>
+    <div class="empresa">
+        <img class="imgmoringa" src="src/img/moringa.png">
+        <span class="descripcion">
+            <h1><span class="otrocolor">Producir, certificar y comercializar</span><br>esquemas agroindustriales a base de<br> <span class="otrocolor">moringa oleífera</span>.</h1>
+            <div class="linea"></div>
+            <p><span class="empcolor">NATIVA ECO GROUP S.A.S.</span><br><br>será en el tiempo la compañía que con sus desarrollos agroindustriales sostenibles a base de moringa oleífera.<br>
+            ayudará a dar soluciones en seguridad alimentaria y otros sectores de la economía</p>
+            <a class="btnemp" href="">Conócenos</a>
+        </span>
+    </div>
+    <div class="parallaxproducto">
+        <div class="descripcionprd">
+            <h1><span class="otrocolor">Producir, certificar y comercializar</span><br>esquemas agroindustriales a base de<br> <span class="otrocolor">moringa oleífera</span>.</h1>
+            <div class="linea"></div>
+            <p><span class="prdcolor">NATIVA ECO GROUP S.A.S.</span><br><br>será en el tiempo la compañía que con sus desarrollos agroindustriales sostenibles a base de moringa oleífera.<br>
+            ayudará a dar soluciones en seguridad alimentaria y otros sectores de la economía</p>
+            <a class="btnprd" href="">Conócenos</a>
+        </div>
+        <div class="contieneimg">
+            <img src="src/img/moringa2.jpg">
+        </div>
+    </div>
+    <div class="historia">
+        <img class="imgmoringahis" src="src/img/moringa3.jpg">
+    </div>
+ </body>
+ <footer>
+    <p>&copy; Satius@Soft Todos los derechos reservados | 2010</p>
+ </footer>
+ <script type="text/javascript">
+
+        var slideIndex = 0;
+        showSlideAuto();
+
+        function plusSlide(n) {
+            showSlide(slideIndex += n);
+        }
+
+        function currentSlide(n) {
+            showSlide(slideIndex = n);
+        }
+
+        function showSlide(n){
+            var i;
+            var slides = document.getElementsByClassName("mySlider");
+            var dots = document.getElementsByClassName("dot");
+
+            if(n > slides.length) {
+                slideIndex = 1;
+            }
+
+            if(n < 1) {
+                slideIndex = slides.length;
+            }
+
+            for (i = 0; i < slides.length; i++) {
+                slides[i].style.display = "none";
+            }
+
+            for (i = 0; i < dots.length; i++) {
+                dots[i].className = dots[i].className.replace(" active", "");
+            };
+
+            slides[slideIndex-1].style.display = "block";
+            dots[slideIndex-1].className += " active";
+        }
+
+        function showSlideAuto(){
+            var j;
+            var slides = document.getElementsByClassName("mySlider");
+            var dots = document.getElementsByClassName("dot");
+
+            for (j = 0; j < slides.length; j++) {
+                slides[j].style.display = "none";
+            }
+
+            slideIndex++;
+
+            if (slideIndex > slides.length) {
+                slideIndex = 1;
+            }
+
+            for (j = 0; j < dots.length; j++) {
+                dots[j].className = dots[j].className.replace(" active", "");
+            };
+
+            slides[slideIndex-1].style.display = "block";
+            dots[slideIndex-1].className += " active";
+            setTimeout(showSlideAuto , 8000);
+        }
+        </script>
+</html>

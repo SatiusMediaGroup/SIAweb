@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html>
+ <head>
+     <meta charset="UTF-8">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <link rel="shortcut icon" type="image/x-icon" href="src/img/favicon-16x16.png">
+     <link rel="stylesheet" type="text/css" href="css/style.css">
+     <script type="text/JavaScript" src="js/jquery-3.3.1.js"></script>
+     <script type="text/JavaScript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery-scrollTo/2.1.2/jquery.scrollTo.min.js"></script>
+     <script type="text/JavaScript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery-localScroll/2.0.0/jquery.localScroll.min.js"></script>
+     <script type="text/JavaScript" src="js/siaActions.js"></script>
+     <title>SIA | Servicios Integrados de Administración</title>
+ </head>
+ <body>
+    <header>
+        <div class="contenedornavbar" id="barraNav">
+            <a href=""><img class="marca" src="src/img/sialogo.png"></a>
+            <nav class="nav">
+                <a href="#slider" class="activa dropbtn">Inicio</a>
+                <div class="desplegable">
+                    <a href="#servicios" class="dropbtn">Servicios</a>
+                    <!-- <div class="contenido">
+                        <a href="">Administración de propiedad horizontal</a>
+                        <a href="">Asesorías</a>
+                        <a href="">Auditoria</a>
+                        <a href="">Revisoría fiscal</a>
+                        <a href="">Contabilidad</a>
+                    </div> -->
+                </div>
+                <a href="#clientes" class="dropbtn">Clientes</a>
+                <div class="desplegable">
+                    <button class="dropbtn">Administración Provicional</button>
+                    <div class="contenido">
+                        <a href="http://www.jaramillomora.com" target="_blank">Constructora Jaramillo Mora</a>
+                        <a href="http://www.constructoraalpes.com" target="_blank">Constructora Alpes</a>
+                        <a href="http://inacar.co" target="_blank">Constructora Inacar</a>
+                        <a href=" http://www.vivendo.co/constructoras/cali/limonar-constructora-sas" target="_blank">Constructora Limonar</a>
+                    </div>
+                </div>
+                <a href="#somos" class="dropbtn">Quíenes Somos</a>
+                <a href="#contacto" class="dropbtn">Contacto</a>
+                <a href="" class="dropbtn">Blog</a>
+            </nav>
+        </div>
+    </header>
+    <div class="contenedorslider" id="slider">
+        <div class="mySlider fade">
+            <img class="imgslider" src="src/img/aerea_piscina.jpg">
+            <section class="caption">
+                <h1>Nuestros <span class="otrocolorcaption">servicios</span><br> de administrarción de propiedad horizontal<br>requieren de las mejores tecnologías</h1>
+                <a href="#servicios" class="btnmas">Conozca Más</a>
+            </section>
+        </div>
+        <div class="mySlider fade">
+            <img class="imgslider" src="src/img/casa_jardin.jpg">
+            <section class="caption">
+                <h1>Conozca nuestros <span class="otrocolorcaption">clientes</span></h1>
+                <a href="#clientes" class="btnmas">Aqui</a>
+            </section>
+        </div>
+        <div class="mySlider fade">
+            <img class="imgslider" src="src/img/tower.jpg">
+            <section class="caption">
+                <h1>En <span class="otrocolorcaption">SIA</span><br> ofrecemos nuestros servicios<br>pensados para usted</h1>
+                <a href="#contacto" class="btnmas">Contactenos</a>
+            </section>
+        </div>
+        <a class="next" onclick="plusSlide(1)">&#10095</a>
+        <a class="prev" onclick="plusSlide(-1)">&#10094</a>
+    </div>
+    <div class="servicios" id="servicios">
+        <h1>Servicios</h1>
+        <p>Algunos de los servicios de <span class="otrocolor">administración de propiedad horizonal</span> que tenemos para usted</p>
+        <div class="linea"></div>
+        <div class="galleryicons">
+            <figure class="gallery-item-icon" >
+                <a href="" id="ser1"><img class="iconserv" src="src/img/icons/casas.png"></a>
+                <h2>Administración<br>propiedad horizontal</h2>
+            </figure>
+            <figure class="gallery-item-icon">
+                <a href="" id="ser2"><img class="iconserv" src="src/img/icons/apartamentos.png"></a>
+                <h2>Asesorías</h2>
+            </figure>
+            <figure class="gallery-item-icon">
+                <a href="" id="ser3"><img class="iconserv" src="src/img/icons/fincas.png"></a>
+                <h2>Auditoria</h2>
+            </figure>
+            <figure class="gallery-item-icon">
+                <a href="" id="ser4"><img class="iconserv" src="src/img/icons/bodegas.png"></a>
+                <h2>Revisoría fiscal</h2>
+            </figure>
+            <figure class="gallery-item-icon">
+                <a href="" id="ser5"><img class="iconserv" src="src/img/icons/terrenos.png"></a>
+                <h2>Contabilidad</h2>
+            </figure>
+        </div>
+    </div>
+    <div class="detalle">
+        <span id="idservicio"><h1>Administración propiedad horizontal</h1></span>
+        <span id="descservicio"><p id="txtdetalle">Click en el icono para ver detalle</p></span>
+        <div class="gallery">
+            <figure class="gallery-item">
+            </figure>
+        </div>
+    </div>
+    <div class="clientes" id="clientes">
+        <h1>Clientes</h1>
+        <p>Algunos de los clientes que <span class="otrocolor">nos respaldan</span></p>
+        <div class="linea"></div>
+        <div class="clientesicons">
+            <figure class="clientes-item-icon" >
+                <a href="https://sites.google.com/view/crmontemadero/inicio" target="_blank"><img class="iconcli" src="src/img/icons/montemadero.JPG"></a>
+                <h2>Montemadero</h2>
+            </figure>
+            <figure class="clientes-item-icon">
+                <a href="" id="cli2"><img class="iconcli" src="src/img/icons/cliente.png"></a>
+                <h2>Centro comercial <br> cañaveralejo</h2>
+            </figure>
+            <figure class="clientes-item-icon">
+                <a href="" id="cli3"><img class="iconcli" src="src/img/icons/cliente.png"></a>
+                <h2>K111 Pino</h2>
+            </figure>
+            <figure class="clientes-item-icon">
+                <a href="" id="cli4"><img class="iconcli" src="src/img/icons/cliente.png"></a>
+                <h2>Avalo</h2>
+            </figure>
+            <figure class="clientes-item-icon">
+                <a href="" id="cli5"><img class="iconcli" src="src/img/icons/cliente.png"></a>
+                <h2>Kumanday</h2>
+            </figure>
+        </div>
+    </div>
+    <div class="parallaxsomos" id="somos">
+        <table>
+            <tr>
+                <th colspan="2"><h1>SIA<br>Servicios Integrados de Administración</h1></th>
+            </tr>
+            <tr>
+                <td class="link">
+                    <h2>Quiénes Somos</h2>
+                    <p>Somos una empresa, comformada por un grupo de profesionales con una amplia experiencia
+                        en Administración de Propiedad Horizontal. Nuetra trayectoria nos ha permitido dar a 
+                        nuestros clientes un servicio reconocido y de calida.
+                    </p>
+                    <div class="mapa-content">
+                        <figure class="figure-mapa">
+                        </figure>
+                        <figure class="figure-mapa">
+                        </figure>
+                    </div>
+                </td>
+                <td class="info">
+                </td>
+            </tr>
+        </table>
+    </div>
+    <div id="contacto">
+        <table>
+            <tr>
+                <th colspan="2"><h1>Contactenos</h1></th>
+            </tr>
+            <tr>
+                <td class="data">
+                    <h2>Donde estamos ubicados</h2>
+                    <div class="mapa-content">
+                        <figure class="figure-mapa">
+                            <img class="imgicon"src="src/img/icons/tel.png">Telefono: +57(2) 3709280<br>
+                            <img class="imgicon"src="src/img/icons/email.png">Email: siaserviciosintegrados@hotmail.com<br>
+                            <img class="imgicon"src="src/img/icons/dir.png">Dirección:  Carrera 74 # 15-33<br>
+                            <img class="imgicon"src="src/img/icons/fb.png"><a href="">@SIA</a>
+                        </figure>
+                        <figure class="figure-mapa">
+                            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3982.835651051664!2d-76.53193746496592!3d3.3902768676331703!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8e30a146c58941af%3A0x8e600017e338ea65!2sCra.+74+%2315-33%2C+Cali%2C+Valle+del+Cauca!5e0!3m2!1ses!2sco!4v1531839693885" width="500" height="500" frameborder="0" style="border:0" allowfullscreen></iframe>
+                        </figure>
+                    </div>
+                </td>
+                <td class="form">
+                    <form method="POST" action="">
+                        <div class="form-content">
+                            Nombre(s)<span class="obligatorio">*</span> <br>
+                            <input type="text" name="nombre" id="nombre" required pattern="[A-Za-z]{3,15}"> <br>
+                            Apellidos<span class="obligatorio">*</span> <br>
+                            <input type="text" name="apellido" id="apellido" required pattern="[A-Za-z]{3,15}"> <br>
+                            Correo<span class="obligatorio">*</span> <br>
+                            <input type="email" name="correo" id="correo" required> <br>
+                            Empresa <br>
+                            <input type="text" name="empresa" id="empresa" pattern="[A-Za-z]{5,20}"> <br>
+                            Telefono<span class="obligatorio">*</span> <br>
+                            <input type="tel" name="tel" id="telefono" required pattern="[0-9]{7,13}"> <br>
+                            Mensaje<span class="obligatorio">*</span> <br>
+                            <textarea placeholder="Escriba su mensaje.." name="msj" id="mensaje" required></textarea> <br>
+                            <!-- <div class="g-recaptcha" data-sitekey="6LeijVEUAAAAAJDUEc1QT7YYb_AyK0VyynBbTDh0"></div> <br> -->
+                            <input type="submit">
+                        </div>
+                    </form>
+                </td>
+            </tr>
+        </table>
+    </div>
+ </body>
+ <footer>
+    <p>&copy; Satius@Soft Todos los derechos reservados | 2010</p>
+ </footer>
+ <script type="text/javascript">
+
+        var slideIndex = 0;
+        showSlideAuto();
+
+        function plusSlide(n) {
+            showSlide(slideIndex += n);
+        }
+
+        function currentSlide(n) {
+            showSlide(slideIndex = n);
+        }
+
+        function showSlide(n){
+            var i;
+            var slides = document.getElementsByClassName("mySlider");
+            /*var dots = document.getElementsByClassName("dot");*/
+
+            if(n > slides.length) {
+                slideIndex = 1;
+            }
+
+            if(n < 1) {
+                slideIndex = slides.length;
+            }
+
+            for (i = 0; i < slides.length; i++) {
+                slides[i].style.display = "none";
+            }
+
+            /*for (i = 0; i < dots.length; i++) {
+                dots[i].className = dots[i].className.replace(" active", "");
+            };*/
+
+            slides[slideIndex-1].style.display = "block";
+            /*dots[slideIndex-1].className += " active";*/
+        }
+
+        function showSlideAuto(){
+            var j;
+            var slides = document.getElementsByClassName("mySlider");
+            /*var dots = document.getElementsByClassName("dot");*/
+
+            for (j = 0; j < slides.length; j++) {
+                slides[j].style.display = "none";
+            }
+
+            slideIndex++;
+
+            if (slideIndex > slides.length) {
+                slideIndex = 1;
+            }
+
+            /*for (j = 0; j < dots.length; j++) {
+                dots[j].className = dots[j].className.replace(" active", "");
+            };*/
+
+            slides[slideIndex-1].style.display = "block";
+            /*dots[slideIndex-1].className += " active";*/
+            setTimeout(showSlideAuto , 8000);
+        }
+        </script>
+</html>

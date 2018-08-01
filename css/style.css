@@ -1,0 +1,513 @@
+@import url('https://fonts.googleapis.com/css?family=Merriweather+Sans:300,400,700|Quattrocento+Sans:400,400i,500,700|Roboto+Condensed:400,400i,700|Roboto:300,400,500,700');
+
+body {
+  /*box-sizing: border-box;*/
+  margin: 0;
+  padding: 0;
+  font-size: 16px;
+  font-family: 'Quattrocento Sans' , sans-serif;
+}
+
+/**, *:before, *:after {
+  box-sizing: inherit;
+}*/
+
+/*barra de navegacion*/
+
+header {
+  width: 100%;
+  /*height: 6.5rem;*/
+  position: fixed;
+  z-index: 1;
+  background: transparent;
+}
+
+nav {
+  position: relative;
+  /*top: -3rem;*/
+  text-align: center;
+  background: transparent;
+  padding: 0.5rem;
+}
+
+.contenedornavbar {
+  width: 100%;
+  text-align: center;
+}
+
+.marca {
+  height: 7rem;
+  margin-top: 1rem;
+}
+
+.dropbtn {
+  padding: 0 2rem;
+  border: none;
+  outline: none;
+  background-color: inherit;
+  font-family: "Quattrocento Sans" , sans-serif;
+  font-weight: 700;
+  font-size: 1rem;
+  text-transform: uppercase;
+  color: #0026ca;
+  cursor: pointer;
+  text-decoration: none;
+}
+
+.dropbtn:hover {
+  color: #031877;
+}
+
+
+.desplegable {
+  display: inline-block;
+}
+
+.contenido {
+  display: none;
+  position: absolute;
+  padding: 1rem;
+  margin-left: 1rem;
+  background: #0026ca;
+}
+
+
+.contenido a {
+  text-align: left;
+  display: block;
+  font-size: 1.05rem;
+  font-family: "Quattrocento Sans" , sans-serif;
+  font-weight: 300;
+  text-transform: uppercase;
+  color: white;
+  float: none;
+  padding: 10px 10px;
+  text-decoration: none;
+  border-bottom: 0.1rem solid rgb(255,255,255,0.3);
+}
+
+.contenido a:hover {
+  background: rgb(255,255,255,0.1);
+}
+
+.desplegable:hover .contenido {
+  display: block;
+}
+
+/*Slider de imagenes*/
+
+.mySlider {
+  display: none;
+  overflow: hidden;
+}
+
+.contenedorslider {
+  position: relative;
+  max-width: 100%;
+  margin: auto;
+  background: #0026ca;
+}
+
+.imgslider {
+  width: 100%;
+  height: 800px;
+}
+
+
+.next, .prev {
+  cursor: pointer;
+  position: absolute;
+  top: 40%;
+  width: auto;
+  margin-left: 2rem;
+  padding: 1rem 2rem 1rem 1.7rem;
+  color: white;
+  font-weight: bold;
+  font-size: 1.5em;
+  border: 2px solid rgb(255,255,255);
+  border-radius: 100%;
+}
+
+.next {
+  right: 0;
+  margin-right: 2rem;
+  padding: 1rem 1.7rem 1rem 2rem;
+  border-radius: 100%;
+}
+
+.next:hover, .prev:hover {
+  border: 2px solid rgb(255,255,255,0);
+  background-color: #031877;
+}
+
+.dots-content {
+  position: relative;
+  text-align: center;
+}
+
+.dot {
+  cursor: pointer;
+  height: 10px;
+  width: 10px;
+  margin: 0 2px;
+  background-color: #1d36a5;
+  border-radius: 50%;
+  display: inline-block;
+}
+
+.active, .dot:hover {
+  background-color: #031877;
+}
+
+.caption {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  flex-direction: column;
+}
+
+.caption h1 {
+  font-size: 2em;
+  width: 100%;
+  color: ghostwhite;
+  
+  text-transform: uppercase;
+  padding: 50px 20px;
+  line-height: 40px;
+  background-color: #7e9df127;
+  -webkit-animation-name: texto-in;
+  -webkit-animation-duration: 1s;
+  animation-name: texto-in;
+  animation-duration: 0.5s;
+  animation-timing-function: ease;
+}
+
+.otrocolorcaption {
+  color: #0026ca;
+}
+
+.btnmas {
+  background-color: #0026ca;
+  color: ghostwhite;
+  border-radius:3px;
+  text-decoration:none;
+  padding:10px 12px;
+
+  animation-name: texto-in;
+  animation-duration: 0.5s;
+  animation-timing-function: ease;
+}
+
+.btnmas:hover {
+  background-color: #031877;
+}
+
+@keyframes texto-in {
+  0% {opacity: 0; top: -200px;}
+  50% {opacity: 0.1; top: -70px;}
+  75% {opacity: 0.15;}
+  100% {opacity: 0.8; top: 0px;}
+}
+/* informacion en cuerpo */
+
+/* Servicios */
+
+.servicios {
+
+  background: #0026ca;
+  border: 1px solid #0026ca;
+  text-align: center;
+  color: white;
+}
+
+.servicios h1 {
+  color: white;
+  font-size: 3em;
+  text-transform: uppercase;
+}
+
+.servicios p {
+  font-size: 1.1em;
+  font-weight: normal;
+  margin-top: 2.5rem;
+  text-transform: uppercase;
+}
+
+.servicios .galleryicons {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-top: 5rem;
+}
+
+.servicios .galleryicons h2 {
+  font-weight: normal;
+  font-size: 1em;
+  /*text-align: center;
+  color: white;*/
+}
+
+.servicios .gallery-item-icon {
+  margin: 1.3rem 2.6rem;
+}
+
+.servicios .gallery-item-icon .iconserv {
+  width: 9rem;
+}
+
+.linea {
+  position: relative;
+  left: 45.5%;
+  margin: 1rem;
+  width: 100px;
+  border-bottom: 1px solid white;
+}
+
+.otrocolor {
+  color: #1ebfff;
+}
+
+.detalle {
+  background-color: ghostwhite;
+  text-align: center;
+}
+
+.detalle h1 {
+  color: #0026ca;
+  padding-top: 30px;
+}
+
+/*.detalle #txtdetalle {
+  text-align: center;
+  font-size: 1.2em;
+  margin-left: auto;
+  margin-right: auto;
+  width: 80%;
+  padding-top: 10px;
+}*/
+
+.detalle p {
+  text-align: justify;
+  font-size: 1.1em;
+  margin-left: auto;
+  margin-right: auto;
+  width: 80%;
+  padding-top: 10px;
+  color: rgb(0,0,0, 0.8);
+}
+.detalle ul {
+  text-align: justify;
+  font-size: 1em;
+  margin-left: auto;
+  margin-right: auto;
+  width: 80%;
+  padding-top: 10px;
+  color: rgb(0,0,0, 0.9);
+}
+
+.detalle .gallery {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.detalle .gallery-item {
+  margin: 1.3rem 2.6rem;
+}
+
+.detalle .gallery-item .serimg {
+  width: 15rem;
+  border-radius: 100%;
+}
+
+/*Clientes*/
+
+.clientes {
+
+  background: #0026ca;
+  border: 1px solid #0026ca;
+  text-align: center;
+  color: white;
+}
+
+.clientes h1 {
+  color: white;
+  font-size: 3em;
+  text-transform: uppercase;
+}
+
+.clientes p {
+  font-size: 1.1em;
+  font-weight: normal;
+  margin-top: 2.5rem;
+  text-transform: uppercase;
+}
+
+.clientes .clientesicons {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-top: 5rem;
+}
+
+.clientes .clientesicons h2 {
+  font-weight: normal;
+  font-size: 1em;
+  /*text-align: center;
+  color: white;*/
+}
+
+.clientes .clientes-item-icon {
+  margin: 1.3rem 2.6rem;
+}
+
+.clientes .clientes-item-icon .iconcli {
+  width: 9rem;  
+  border-radius: 100%;
+}
+
+/* parallax quienes somos */
+
+.parallaxsomos {
+  background-image: url("../src/img/manos_casa.jpg");
+  height: 600px;
+  background-attachment: fixed;
+  position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  text-align: center;
+}
+
+/*Contacto*/
+
+#contacto {
+  position: relative;
+  max-width: 100%;
+  margin: auto;
+  padding: 1rem 3rem;
+}
+
+table{
+  border-collapse: collapse;
+  width: 100%;
+}
+
+#contacto th {
+  font-size: 1.5em;
+  text-transform: uppercase;
+  color: #0026ca;
+  text-align: center;
+}
+
+.data{
+  width: 40%;
+}
+
+.data h2{
+  text-align: center;
+  color: #0026ca;
+  font-size: 2em;
+  margin-left: 5rem;
+}
+
+.mapa-content {
+  display: block;
+  margin-left: 5rem;
+}
+
+.figure-mapa {
+  font-size: 14px;
+  margin: 1rem 0rem;
+}
+
+.figure-mapa a {
+  text-decoration: none;
+  color: black;
+  cursor: pointer;
+}
+
+.form-content {
+  text-align: center;
+  font-size: 12px;
+  opacity: 0.8;
+}
+
+.imgicon {
+  vertical-align: middle;
+  margin-right: 0.5rem;
+  width: 2.1rem;
+}
+
+.obligatorio {
+  color: red;
+}
+
+input[type=text], input[type=email], input[type=tel], textarea {
+  font-size: 16px;
+  width: 60%;
+  padding: 7px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  margin-top: 5px;
+  margin-bottom: 5px;
+  resize: vertical;
+}
+
+input[type=submit] {
+  font-size: 13px;
+  background-color: #0026ca;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+input[type=submit]:hover {
+  background-color: #031877;
+}
+
+.g-recaptcha {
+  display: inline-block;
+}
+
+/*Footer*/
+
+footer {
+  background: #0026ca;
+  color: #fff;
+  height: 12rem;
+  border: 1px solid #0026ca;
+}
+
+/* Media Queris*/
+
+@media only screen and (max-width: 1200px) {
+
+  header {
+  width: 100%;
+  height: 12.5rem;
+}
+
+  nav {
+    text-align: center;
+    top:0;
+}
+
+.dropbtn {
+  width: 100%;
+  padding: 0 8rem;
+  display: block;
+}
+
+.desplegable {
+  display: block;
+}
+
+}
